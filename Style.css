@@ -1,0 +1,84 @@
+:root{
+    --light-blue-100: #F3F5FC;
+    --dark-blue-300: #0A3871;
+    --dark-gray-500: #343A40;
+    --dark-gra-400: #495057;
+}
+header{
+    width: 216px;
+    height: 203px;
+    top: 255px;
+    left: 120px;
+    border: 1px;
+   
+
+}
+
+.texto{
+    font-weight: 400;
+    font-size: 32;
+    font: inter;
+}
+
+.areadetexto{
+    width: 680px;
+    height: 288px;
+    top: 168px;
+    left: 240px;
+}
+
+
+.boton{
+    width: Fixed (680px);
+    height: Hug (67px);
+    top: 885px;
+    left: 240px;
+    gap: 24px; 
+}
+
+.encriptar{
+    width: Hug (99px);
+    height: Hug (67px);
+    top: 24px;
+    left: 24px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background-color: #0A3871;
+    border-color: #0A3871;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+.desencriptar{
+    width: Hug (99px);
+    height: Hug (67px);
+    top: 107px;
+    left: 147px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px;
+    gap: 8px;
+    background-color: #eff1fa;
+
+}
+
+.copiar{
+    width: Hug (99px);
+    height: Hug (67px);
+    top: 107px;
+    left: 147px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px;
+    gap: 8px;
+    background-color: #eff1fa;
+}
+
+
+
+
+
+footer{
+    padding: auto;
+    background-color: aqua;
+    text-align: center;
+}
