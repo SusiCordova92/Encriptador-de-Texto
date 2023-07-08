@@ -1,9 +1,36 @@
-const textarea = document.querySelector(".text-area");
+const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
-const copiar = document.querySelector(".copiar");
 
+var botonEncriptar = document.querySelector(".btn-encriptar");
+var botonDesencriptar = document.querySelector(".btn-desencriptar");
+var btn_copiar = document.querySelector(".btn-copiar");
+
+
+
+function btnEncriptar(){
+  const textoEncriptado = encriptar(textArea.value);
+  if(textoEncriptado!=""){
+      mensaje.value = textoEncriptado;
+      textArea.value = "";
+      
+  } else {
+      alert("Ingrese texto")
+  }
+}
+
+function btnDesencriptar(){
+    const textoDesencriptado = desencriptar(textArea.value);
+    if(textoDesencriptado!=""){
+        mensaje.value = textoDesencriptado;
+        textArea.value = "";
+      
+    } else {
+        alert("Ingrese texto")
+    }
+  }
 
 function encriptar(stringEncriptado) {
+  if(stringEncriptado!=""){
   let Codigo = [["a","ai"], ["e","enter"], ["i","emes"], ["o","ober"], ["u","ufat"]];
   stringEncriptado = stringEncriptado.toLowerCase();
 
@@ -13,9 +40,12 @@ function encriptar(stringEncriptado) {
     }
   }
   return stringEncriptado;
-}
+} else {
+  return "";
+} }
 
   function desencriptar(stringDesencriptado) {
+  if(stringDesencriptada!=""){
   let Codigo = [["a","ai"], ["e","enter"], ["i","emes"], ["o","ober"], ["u","ufat"]];
   stringDesencriptado = stringDesencriptado.toLowerCase();
 
@@ -25,11 +55,22 @@ function encriptar(stringEncriptado) {
     }
   }
   return stringDesencriptado;
+}  else {
+  return "";
 }
 
-function copiar() {
-  mensaje.select();
-  navigator.clipboard.writeText(mensaje.value);
-  mensaje.value = "";
-  alert("Texto Copiado");
+
+
+  botonEncriptar.onclick = btnEncriptar;
+  botonDesencriptar.onclick = btnDesencriptar;
+
+  function copiarTexto(texto) {
+    navigator.clipboard.writeText(texto)
+        .then(() => console.log("Text copied to clipboard"))
+        .catch(error => console.error("Error copying text:", error));
 }
+
+  btn_copiar.addEventListener("click", () =>copiartexto(result.textContent));
+
+}
+

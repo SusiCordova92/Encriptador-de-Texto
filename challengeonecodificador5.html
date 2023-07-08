@@ -9,9 +9,11 @@
         <link rel="stylesheet" href="Style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <title>Encriptor Alura</title>
+        
     </head>
 
     <body>
+        
         <header>
             <div class="tituloprincipal">
                 <h1><img src="Logo.png"></h1>
@@ -19,29 +21,31 @@
             </div>
         </header>
 
-    
+        
 
     <main>
-        <section class="texto">
-            <label for="text">Ingrese el texto aqui</label>
-            <textarea cols="70" rows="10" id="mensaje" class="areadetexto"></textarea required>
-
-            <p>Solo letras minúsculas y sin acentos</p>
-        </section>
-
-        <section class="boton">
-            <input type="button" value="Encriptar" class="btnencriptar">
-            <input type="button" value="Desencriptar" class="btndesencriptar">
-        </section>
-
-        <section>
-            <textarea class="texto-encriptado"></textarea>
-            <input type="button" value="copiar" class="btncopiar"> 
         
-        </section>
+        <div class="texto">
+                <textarea cols="70" rows="10" id="mensaje" class="areadetexto" placeholder="Ingrese su texto aqui"></textarea required>
+            <section>
+                <p>Solo letras minúsculas y sin acentos</p>
+            </section>
+        </div>
 
-    
+        <div class="boton">
+            <input type="button" name="encriptar" value="Encriptar" id="encriptar" class="boton">
+            <input type="button" name="desencriptar" id="desencriptar" value="Desencriptar" class="boton">
+        </div>
 
+        <div class="resultado">
+            <div class="mensaje-resultado" id="mensaje-vacio">
+                <img src= "Muñeco.png" alt="muneco" class="personaje">
+                
+        </div>
+        <div class="mensaje-resultado" id="mensaje-procesado">
+            <div id="impresionParametros"></div>
+            <input type="button" name="copiar" id="copiar" value="Copiar texto" class="boton">
+        </div> 
        
 
     </main>
@@ -49,6 +53,7 @@
         <footer>
             <p class="desarrollado">Desarrollado por Susana G Cordova Perez</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 
 </html>
