@@ -1,76 +1,167 @@
-:root{
-    --light-blue-100: #F3F5FC;
-    --dark-blue-300: #0A3871;
-    --dark-gray-500: #343A40;
-    --dark-gra-400: #495057;
-}
-header{
-    width: 216px;
-    height: 203px;
-    top: 255px;
-    left: 120px;
-    border: 1px;
-   
 
+body{
+    background-color: #eff1fa ;
+    font-family: Inter;
+    width: 1350px;
+    height: 900px;
 }
 
-.texto{
-    font-weight: 400;
-    font-size: 32;
-    font: inter;
+
+
+
+.logo{
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+    padding: 5px;
 }
 
-.areadetexto{
-    width: 680px;
-    height: 288px;
+#texto{
+    position: absolute;
+    width: 577px;
+    height: 48px;
     top: 168px;
     left: 240px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #eff1fa;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 32px;
+    font-weight: 400;
+    color: #0a3871;
 }
 
-
-.boton{
-    width: Fixed (680px);
-    height: Hug (67px);
-    top: 885px;
+.texto1{
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    top: 851px;
     left: 240px;
-    gap: 24px; 
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #495057;
+    margin-right: 5rem;
 }
 
-.encriptar{
-    width: Hug (99px);
-    height: Hug (67px);
+.texto2{
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    top: 180px;
+    left: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.texto3{
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    top: 280px;
+    left: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0a3871;
+}
+ 
+.resultado{
+     position: absolute;
+     width: 400px;
+     height: 944px;
+     top: 40px;
+     left: 1000px;
+     background-color: white;
+     border: 5px solid #ccc;
+     border-radius: 32px;
+     
+}
+
+.personaje{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 350px;
+    left: 25px;
+}
+
+
+
+.click {
+    position: absolute;
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-end;
+    top: 855px;
+    left: 240px;
+    gap: 24px;
+    display: flex;
+    border: 1px;
+    padding: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 24px;
+    
+}
+
+
+.click .encriptar-button {
+    background-color: #0a3871;
+    color: #e9ecf8;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    letter-spacing: .3rem;
+
+}
+
+.click .encriptar-button:hover{
+    transform: scale(1.2) rotate(0deg);
+}
+
+.click .desencriptar-button {
+    background-color: #e9ecf8;
+    color: #0a3871;
+    border: 1px;
+    border: #0a3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    margin-right: 5rem;
+    letter-spacing: .3rem;
+}
+
+.click .desencriptar-button:hover{
+    transform: scale(1.2) rotate(0deg);
+}
+
+.click .copiar-button {
+    position: absolute;
     top: 24px;
-    left: 24px;
-    padding: 24px;
+    left: 800px;
+    z-index: 10;
+    background-color: #e9ecf8;
+    color: #0a3871;
+    border: #0a3871;
     border-radius: 24px;
-    gap: 8px;
-    background-color: #0A3871;
-    border-color: #0A3871;
-
-
-.desencriptar{
-    width: Hug (99px);
-    height: Hug (67px);
-    top: 107px;
-    left: 147px;
-    padding: 24px;
-    border-radius: 24px;
-    border: 1px;
-    gap: 8px;
-    background-color: #eff1fa;
-
+    width: 328px;
+    height: 67px;
+    letter-spacing: .3rem;
 }
 
-.copiar{
-    width: Hug (99px);
-    height: Hug (67px);
-    top: 107px;
-    left: 147px;
-    padding: 24px;
-    border-radius: 24px;
-    border: 1px;
-    gap: 8px;
-    background-color: #eff1fa;
+.click .copiar-button:hover{
+    transform: scale(1.2) rotate(0deg);
 }
 
 
@@ -78,7 +169,10 @@ header{
 
 
 footer{
-    padding: auto;
-    background-color: aqua;
-    text-align: center;
+    position: absolute;
+    top: 1000px;
+    left: 650px;
+    margin-top: 100px;
+    padding: 2px;
+    color: #0a3871;
 }

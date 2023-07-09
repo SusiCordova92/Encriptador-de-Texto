@@ -3,57 +3,58 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Challange One Encriptador de Texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="Style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap" rel="stylesheet">
         <title>Encriptor Alura</title>
+        <link rel="stylesheet" href="stylesheet.desktop.css" media="screen and (min-width: 1024px)">
         
     </head>
 
     <body>
         
         <header>
-            <div class="tituloprincipal">
+            <div class="logo">
                 <h1><img src="Logo.png"></h1>
             
             </div>
         </header>
 
-        
 
     <main>
         
         <div class="texto">
-                <textarea cols="70" rows="10" id="mensaje" class="areadetexto" placeholder="Ingrese su texto aqui"></textarea required>
-            <section>
-                <p>Solo letras minúsculas y sin acentos</p>
-            </section>
+            <textarea name id="texto" cols="30" rows="13" placeholder="Ingresa el texto aquí"></textarea>
+            <p class="texto1">🛈 Solo letras minúsculas y sin acentos</p>
+            </div>
+            <br></br>
+        <div class="click">
+            <button class="encriptar-button" onclick="encriptarTexto()">Encriptar</button>
+            <button class="desencriptar-button" onclick="desencriptarTexto()">Desencriptar</button>
+            <button class="copiar-button" onclick="copiarTexto()">Copiar</button>
+    
         </div>
-
-        <div class="boton">
-            <input type="button" name="encriptar" value="Encriptar" id="encriptar" class="boton">
-            <input type="button" name="desencriptar" id="desencriptar" value="Desencriptar" class="boton">
-        </div>
-
         <div class="resultado">
-            <div class="mensaje-resultado" id="mensaje-vacio">
-                <img src= "Muñeco.png" alt="muneco" class="personaje">
-                
+            <li>
+            <h2 class="texto2">Ingrese el texto que desees encriptar o desencriptar</h2>
+            <img class="personaje" src= "Muñeco.png" alt="muneco">
+            <p class="texto3">Ningun mensaje fue encontrado</p> 
+            </li>
         </div>
-        <div class="mensaje-resultado" id="mensaje-procesado">
-            <div id="impresionParametros"></div>
-            <input type="button" name="copiar" id="copiar" value="Copiar texto" class="boton">
-        </div> 
-       
+    
+    
+            
+    </div>
 
     </main>
 
         <footer>
+            <script src="script.js"></script>
             <p class="desarrollado">Desarrollado por Susana G Cordova Perez</p>
         </footer>
-        <script src="script.js"></script>
+        
     </body>
 
 </html>
